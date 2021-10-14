@@ -1,9 +1,8 @@
 const link = document.querySelector('#link');
 
 link.addEventListener('click', function (event) {
-    console.log('lalaa')
     event.preventDefault();
     newLink = prompt('Введите другой текст ссылки')
+    if (newLink == false) newLink = "Попробуйте еще раз"
     link.innerText = newLink
-    
 })
